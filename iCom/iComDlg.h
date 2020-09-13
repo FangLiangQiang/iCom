@@ -3,6 +3,8 @@
 //
 
 #pragma once
+#include "afxwin.h"
+#include "mscomm1.h"
 
 
 // CiComDlg ¶Ô»°¿ò
@@ -30,4 +32,17 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnBnClickedOk();
+//	afx_msg void OnClickedButton1();
+	CComboBox m_comboCom;
+	afx_msg void OnCbnSelchangeComboCom();
+	CMscomm1 m_ctrlComm;
+private:
+	bool m_setOk;
+public:
+	CString m_strTXData;
+	CString m_strRXData;
+	DECLARE_EVENTSINK_MAP()
+	void OnComm();
+	afx_msg void OnBnClickedButtonSend();
+	afx_msg void OnBnClickedButtonCleanup();
 };

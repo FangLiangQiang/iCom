@@ -101,6 +101,7 @@
   <ItemGroup>
     <ClInclude Include="iCom.h" />
     <ClInclude Include="iComDlg.h" />
+    <ClInclude Include="mscomm1.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -108,6 +109,7 @@
   <ItemGroup>
     <ClCompile Include="iCom.cpp" />
     <ClCompile Include="iComDlg.cpp" />
+    <ClCompile Include="mscomm1.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -121,7 +123,7 @@
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties RESOURCE_FILE="iCom.rc" />
+      <UserProperties RESOURCE_FILE="iCom.rc" _x007B_648A5600-2C6E-101B-82B6-000000000014_x007D_="CMscomm1" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
